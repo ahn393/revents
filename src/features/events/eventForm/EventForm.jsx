@@ -20,7 +20,7 @@ function EventForm({
 
   const [values, setValues] = useState(initValues)
 
-  const handleFormSubmit = () => {
+  function handleFormSubmit() {
     selectedEvent
       ? updateEvent({ ...selectedEvent, ...values })
       : createEvent({
@@ -33,7 +33,7 @@ function EventForm({
     setFormOpen(false)
   }
 
-  const handleInputChange = e => {
+  function handleInputChange(e) {
     const { name, value } = e.target
     setValues({
       ...values,
@@ -43,7 +43,7 @@ function EventForm({
   }
 
   return (
-    <Segment clearing>
+    <Segment clearing raised>
       <Header content={selectedEvent ? 'Edit event' : 'Create new event'} />
       <Form onSubmit={handleFormSubmit}>
         <Form.Field>

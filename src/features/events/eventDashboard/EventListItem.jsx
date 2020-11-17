@@ -4,7 +4,7 @@ import EventListAttendee from './EventListAttendee'
 
 function EventListItem({ event, selectEvent, deleteEvent }) {
   return (
-    <Segment.Group>
+    <Segment.Group raised>
       <Segment>
         <Item.Group>
           <Item>
