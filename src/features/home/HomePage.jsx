@@ -11,12 +11,8 @@ import {
 function HomePage({ history }) {
   return (
     <>
-        <Segment inverted textAlign='center' vertical className='masthead'>
-          <Container>
-            <Image
-              src='/assets/edux11.png'
-              style={{ width: '430px'}}
-            />
+      <Segment inverted textAlign='center' vertical className='masthead'>
+        <Container as="div" style={{margin: '150px auto 0 auto'}}>
           <Header
             as='h3'
             inverted
@@ -30,7 +26,11 @@ function HomePage({ history }) {
               src='/assets/hand-dark.png'
               style={{ width: '170px', marginBottom: 50 }}
             />
-            <div style={{ color: '#eaeaea' }}>EDUCATION+TECHOLOGY</div>
+            <div>
+              <Image src='/assets/edu-x2.png' style={{ width: '150px', margin: '0 auto 30px auto' }} />
+            </div>
+
+            <div style={{ color: '#eaeaea' }}>EDUCATION&nbsp;+&nbsp;TECHOLOGY</div>
           </Header>
           <Button
             onClick={() => history.push('/events')}
