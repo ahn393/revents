@@ -11,19 +11,26 @@ import {
 function HomePage({ history }) {
   return (
     <>
-      <Segment inverted textAlign='center' vertical className='masthead'>
-
-        <Container>        
+        <Segment inverted textAlign='center' vertical className='masthead'>
+          <Container>
+            <Image
+              src='/assets/edux11.png'
+              style={{ width: '430px'}}
+            />
           <Header
             as='h3'
             inverted
-            style={{ fontFamily: 'Lato', fontWeight: '100', marginTop: 80, letterSpacing: '2px'}}
+            style={{
+              fontFamily: 'Lato',
+              fontWeight: '100',
+              letterSpacing: '2px',
+            }}
           >
             <Image
               src='/assets/hand-dark.png'
-              style={{ width: '170px', marginBottom: 30 }}
+              style={{ width: '170px', marginBottom: 50 }}
             />
-            <div style={{color: '#eaeaea'}}>EDUCATION+TECHOLOGY</div>
+            <div style={{ color: '#eaeaea' }}>EDUCATION+TECHOLOGY</div>
           </Header>
           <Button
             onClick={() => history.push('/events')}
