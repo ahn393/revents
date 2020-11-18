@@ -34,6 +34,8 @@ function HomePage({ history }) {
           </Header>
           <Button
             onClick={() => history.push('/events')}
+            // as={Link}
+            // to='/events'
             size='large'
             color='teal'
             basic
