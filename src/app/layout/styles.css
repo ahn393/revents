@@ -20,6 +20,11 @@ body {
   border-radius: 3px;
 }
 
+.ui.basic.label {
+  border-style: none;
+  border-radius: 3px;
+}
+
 .masthead {
   /* display: flex;
   align-items: center; */
@@ -35,4 +40,8 @@ body {
 
 .masthead .ui.h1.header {
   font-size: 4em;
+}
+
+.react-datepicker-wrapper {
+  width: 100%
 }
