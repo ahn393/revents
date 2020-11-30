@@ -8,8 +8,8 @@ function EventFilters() {
       <Menu vertical size='large' style={{width: '100%'}}>
         <Header icon='filter' attached color='teal' content='Filters' />
         <Menu.Item content='All Events' />
-        <Menu.Item consent="I'm going"/>
-        <Menu.Item consent="I'm hosting" />
+        <Menu.Item content="I'm going"/>
+        <Menu.Item content="I'm hosting" />
       </Menu>
       <Header icon='calendar' attached color='teal' content='Select date' />
       <Calendar />
